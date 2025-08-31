@@ -35,4 +35,5 @@ jobs:
           user_name: "github-actions[bot]"
           user_email: "github-actions[bot]@users.noreply.github.com"
           commit_message: "Deploy from GitHub Actions"
-          exclude_assets: ".*"   # Prevents cp errors on hidden files
+          exclude_assets: ".*" # Prevents cp errors on hidden files
+          force_orphan: true # this handles first-time deployment
